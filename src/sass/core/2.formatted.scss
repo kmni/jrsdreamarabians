@@ -1,0 +1,275 @@
+.formattedContent{
+	color: #101b1c;
+	
+	& > *:first-child{
+		margin-top: 0 !important;
+	}
+	
+	& > *:last-child{
+		margin-bottom: 0 !important;
+	}
+	
+	h1{
+		font-size: 38px;
+		font-size: 3.8rem;
+		font-weight: 700;
+		text-align: center;
+		margin-bottom: 50px;
+		
+		&.logo{
+			height: 183px;
+			margin-bottom: 0;
+			position: relative;
+			z-index: 9;
+			
+			&:before{
+				content: '';
+				background: url('../img/logo-big-black.png') 0 0 no-repeat;
+				width: 716px;
+				height: 195px;
+				@include abs(50%, 0);
+				margin-left: -358px;
+			}
+			
+			span{
+				display: none;
+			}
+			
+			+ *{
+				margin-top: 0;
+			}
+		}
+	}
+	
+	h2{
+		font-size: 30px;
+		font-size: 3rem;
+		font-weight: 700;
+		margin: 44px 0 22px;
+	}
+	
+	h3{
+		font-size: 26px;
+		font-size: 2.6rem;
+		font-weight: 700;
+		margin: 36px 0 22px;
+	}
+	
+	h4{
+		font-size: 22px;
+		font-size: 2.2rem;
+		font-weight: 700;
+		margin: 28px 0 22px;
+	}
+	
+	p{
+		font-size: 18px;
+		font-size: 1.8rem;
+		font-weight: 300;
+		line-height: 1.222;
+		margin: 1.222em 0;
+		
+		&.bold,
+		&.strong{
+			font-weight: 700;
+		}
+		
+		small{
+			font-size: .833em;
+		}
+	}
+	
+	a{
+		text-decoration: underline;
+
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	
+	img{
+		max-width: 100%;
+		height: auto;
+	}
+	
+	figure{
+		margin: 22px 0;
+		
+		a{
+			display: block;
+		}
+		
+		&.gallery{
+			@include rel(-94px, 0);
+			width: 1260px;
+			@include clear();
+			margin-bottom: 83px;
+			
+			a{
+				float: left;
+				overflow: hidden;
+				@include size(248px);
+				position: relative;
+				
+				&:before{
+					content: '';
+					background: fade_out(#101b1c, .14);
+					@include abs(0, 0);
+					@include size(100%);
+					opacity: 0;
+					transition: opacity .2s;
+				}
+				
+				&:after{
+					content: '';
+					background: url('../img/ico-loupe.png') 0 0 no-repeat;
+					width: 23px;
+					height: 23px;
+					@include absCenter();
+					opacity: 0;
+					transition: opacity .2s;
+				}
+				
+				&:hover{
+					
+					&:before,
+					&:after{
+						opacity: 1;
+					}
+				}
+				
+				+ a{
+					margin-left: 3px;
+				}
+				
+				img{
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+	}
+	
+	ol,
+	ul{
+		margin: 20px 0;
+		
+		li{
+			font-size: 18px;
+			font-size: 1.8rem;
+			font-weight: 300;
+			line-height: 1.222;
+			margin-top: 7px;
+			margin-bottom: 7px;
+			
+			&:first-child{
+				margin-top: 0;
+			}
+			
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		
+		ol,
+		ul{
+			margin-top: 7px;
+			margin-bottom: 0;
+			margin-left: 0;
+		}
+	}
+	
+	ul{
+		margin-left: 20px;
+		
+		> li{
+			padding-left: 6px;
+			list-style: disc;
+		}
+	}
+	
+	ol{
+		margin-left: 20px;
+		
+		> li{
+			padding-left: 6px;
+			list-style: decimal;
+		}
+	}
+	
+	table{
+		width: 100%;
+		margin: 22px 0;
+		border: 1px solid #c6c6c6;
+		
+		th,
+		td{
+			font-size: 18px;
+			font-size: 1.8rem;
+			text-align: left;
+			border-bottom: 1px solid #c6c6c6;
+			border-right: 1px solid #c6c6c6;
+			padding: 12px 8px;
+			vertical-align: middle;
+			
+			&:last-child{
+				border-right: 0;
+			}
+		}
+		
+		th{
+			font-weight: 700;
+		}
+	}
+	
+	h1, h2, h3, h4{
+		
+		+ ul,
+		+ ol,
+		+ h2,
+		+ h3,
+		+ h4,
+		+ p,
+		+ .sloupce-2,
+		+ .twoColumn{
+			margin-top: 0;
+		}
+	}
+	
+	.prava,
+	.right{
+		float: right;
+		margin-left: 33px;
+	}
+	
+	.leva,
+	.left{
+		float: left;
+		margin-right: 33px;
+	}
+	
+	.sloupce-2,
+	.twoColumn{
+		@include clear();
+		margin: 18px 0;
+		
+		> div{
+			width: 47%;
+			float: left;
+			margin-right: 3%;
+			
+			+ div{
+				margin-right: 0;
+				margin-left: 3%;
+			}
+			
+			> *:first-child{
+				margin-top: 0 !important;
+			}
+			
+			> *:last-child{
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+}

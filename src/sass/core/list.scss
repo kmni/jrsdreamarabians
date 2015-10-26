@@ -1,0 +1,74 @@
+.pageList{
+	@include clear();
+	text-align: center;
+	padding-top: 53 - 32px;
+	
+	.horse{
+		display: inline-block;
+		@include size(367px);
+		margin: 0 15px 31px;
+		position: relative;
+		
+		.photo{
+			
+			img{
+				display: block;
+				@include size(100%);
+			}
+		}
+		
+		.tag{
+			@include absRB(-12px, 17px);
+			width: 348px;
+			height: 67px;
+			padding: 8px 25px 0 35px;
+			background: $white;
+			color: #464646;
+			font-weight: 300;
+			text-transform: uppercase;
+			text-align: left;
+			transition: background-color .2s, color .2s;
+
+			&:before{
+				content: '';
+				border-color: $white transparent transparent $white;
+				border-width: 3px 6px;
+				border-style: solid;
+				width: 0;
+				height: 0;
+				@include absRB(0, -6px);
+				transition: border-color .2s;
+			}
+
+			.name{
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				font-size: 24px;
+				font-size: 2.4rem;
+				margin-left: 2px;
+			}
+
+			.parents{
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				font-size: 14px;
+				font-size: 1.4rem;
+			}
+		}
+		
+		&:hover{
+			
+			.tag{
+				background-color: #2e4040;
+				color: #d3d3d3;
+				
+				&:before{
+					border-top-color: #2e4040;
+					border-left-color: #2e4040;
+				}
+			}
+		}
+	}
+}

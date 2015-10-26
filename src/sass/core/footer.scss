@@ -1,0 +1,30 @@
+.pageFooter{
+	border-bottom: 7px solid #9ca8a6;
+	min-width: $minWidth;
+	height: 165px;
+	background: url('../img/bg-footer.jpg') 50% 0 no-repeat;
+	
+	.inner{
+		padding-top: 73px;
+	}
+	
+	.menu{
+		text-align: center;
+		
+		li{
+			display: inline-block;
+			margin: 0 22px;
+		}
+		
+		a{
+			color: #f9ffff;
+			font-size: 16px;
+			font-size: 1.6rem;
+			text-transform: uppercase;
+			
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}

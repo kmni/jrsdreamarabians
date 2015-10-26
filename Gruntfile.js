@@ -51,9 +51,9 @@ module.exports = function (grunt) {
 				files: [
 					{
 						".tmp/css/style.css": [
-                            "src/sass/core/import.scss", //import imports
-							"src/sass/plugins/reset.scss", //import reset
-							"src/sass/plugins/*.scss", "!src/less/plugins/_*.scss", //import enabled styles for plugins
+                            //"src/sass/core/import.scss", //import imports
+							//"src/sass/plugins/reset.scss", //import reset
+							//"src/sass/plugins/*.scss", "!src/less/plugins/_*.scss", //import enabled styles for plugins
 							"src/sass/style.scss" //import core page styles
 						],
 						".tmp/css/print.css": [
@@ -66,9 +66,9 @@ module.exports = function (grunt) {
 				files: [
 					{
 						".tmp/css/style.min.css": [
-                            "src/sass/core/import.scss", //import imports
-							"src/sass/plugins/reset.scss", //import reset
-							"src/sass/plugins/*.scss", "!src/less/plugins/_*.scss", //import enabled styles for plugins
+                            //"src/sass/core/import.scss", //import imports
+							//"src/sass/plugins/reset.scss", //import reset
+							//"src/sass/plugins/*.scss", "!src/less/plugins/_*.scss", //import enabled styles for plugins
 							"src/sass/style.scss" //import core page styles
 						],
 						".tmp/css/print.min.css": [
