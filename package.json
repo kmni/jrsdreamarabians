@@ -1,8 +1,8 @@
 {
-  "name": "DefaultTemplate",
-  "urlname": "template",
+  "name": "Dream Arabians",
+  "urlname": "dreamarabians",
   "responsive": false,
-  "lang": "cs",
+  "lang": "en",
   "indexerOutput": "index.html",
   "version": "0.1.0",
   "devDependencies": {

@@ -9,9 +9,107 @@ html, body{
 	background-color: #fff !important;
 }
 
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+img{
+	display: block;
+	max-width: 100%;
+}
+
+figure{
+	margin: 25px 0;
+}
+
 form,
 aside,
 footer,
-nav{
+nav,
+iframe,
+.button,
+.popupBox,
+.homeHorse,
+.homeLogo,
+.profileGallery .hint,
+.profilePedigree .datasource,
+.newsNews .item .photo,
+.newsFacebook .post .photo,
+.newsFacebook .fb,
+.newsNews .prev,
+.newsNews .next,
+.newsNews .item .name span br{
 	display: none;
+}
+
+.pageLogo{
+	display: block;
+	filter: invert(100%);
+	margin-bottom: 20px;
+	
+	img{
+		margin: 0 auto;
+	}
+}
+
+.formattedContent{
+	
+	figure{
+		
+		&.gallery{
+			
+			a{
+				display: inline-block;
+				width: 32%;
+				
+				&:nth-child(n+4){
+					display: none;
+				}
+			}
+		}
+	}
+	
+	h1.logo span{
+		display: none;
+	}
+}
+
+.pageList{
+	
+	.horse{
+		float: left;
+		width: 48%;
+		margin-right: 2%;
+		margin-bottom: 35px;
+		text-align: center;
+		
+		.name{
+			margin-bottom: 3px;
+			margin-top: 10px;
+		}
+	}
+}
+
+.profileGallery{
+	
+	a{
+		display: inline-block;
+		width: 32%;
+
+		&:nth-child(n+4){
+			display: none;
+		}
+	}
+}
+
+.profilePedigree{
+	
+	table{
+		width: 100%;
+	}
+}
+
+.newsFacebook .post{
+	margin-bottom: 20px;
 }
