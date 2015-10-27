@@ -1,6 +1,7 @@
 {
 	"template": "main",
-	"bodyclass": ""
+	"bodyclass": "",
+	"brackets": "\u007b\u007b"
 }
 
 <main>
@@ -38,31 +39,20 @@
 		</div>
 		<div class="newsFacebook">
 			<h2>Find us on Facebook</h2>
-			<div class="post">
-				<div class="text">
-					JR’s Dream Arabians shared Al Thumama Stud's video.Great exhibition of the Polish Arabian horse via the C. Jarvis Insurance Livestream playback in partnership ...
-				</div>
-				<div class="photo">
-					<img src="img/fb1.jpg" alt="" />
-				</div>
-			</div>
-			<div class="post">
-				<div class="text">
-					JR’s Dream Arabians shared Al Thumama Stud's video.Great exhibition of the Polish Arabian horse via the C. Jarvis Insurance Livestream playback in partnership ...
-				</div>
-				<div class="photo">
-					<img src="img/fb1.jpg" alt="" />
-				</div>
-			</div>
-			<div class="post">
-				<div class="text">
-					JR’s Dream Arabians shared Al Thumama Stud's video.Great exhibition of the Polish Arabian horse via the C. Jarvis Insurance Livestream playback in partnership ...
-				</div>
-				<div class="photo">
-					<img src="img/fb1.jpg" alt="" />
-				</div>
-			</div>
+			<div class="posts" id="facebook"></div>
 			<a href="#" class="fb">View on Facebook</a>
+			<script id="facebook_template" type="text/x-jquery-tmpl">
+				<div class="post">
+					<div class="text">
+						{{= it.brackets }}html message}}
+					</div>
+					{{= it.brackets }}if picture}}
+					<div class="photo">
+						<img src="${Social.facebookPictureURL(picture)}" alt="" />
+					</div>
+					{{= it.brackets }}/if}}
+				</div>
+			</script>
 		</div>
 	</div>
 </main>

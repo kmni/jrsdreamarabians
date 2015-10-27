@@ -767,7 +767,8 @@ module.exports = function (grunt) {
 				"jquery": true,
 				"devel": true,
 				"globals": {
-					google: true
+					google: true,
+					"Social": true
 				}
 			},
 			scripts: {
