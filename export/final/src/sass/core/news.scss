@@ -1,0 +1,164 @@
+.pageNews{
+	display: table;
+	background: $white;
+	width: 100%;
+}
+
+.newsNews{
+	display: table-cell;
+	width: 794px;
+	background: #d3d3d3;
+	padding: 47px 3px 75px 21px;
+	position: relative;
+	
+	h1{
+		color: #111c1d;
+		font-size: 37px;
+		font-size: 3.7rem;
+		font-weight: 300;
+		margin-left: 28px;
+		margin-bottom: 20px;
+	}
+	
+	.list{
+		@include clear();
+	}
+	
+	.item{
+		background: #111c1d;
+		margin: 0 18px 20px 0;
+		position: relative;
+		@include size(367px);
+		float: left;
+		
+		.name{
+			@include size(367px);
+			line-height: 367px;
+			font-size: 24px;
+			font-size: 2.4rem;
+			color: $white;
+			font-weight: 300;
+			text-align: center;
+			position: relative;
+			z-index: 2;
+			
+			span{
+				display: inline-block;
+				line-height: 29px;
+				vertical-align: middle;
+			}
+		}
+		
+		.photo{
+			@include abs(0, 0);
+			z-index: 1;
+			@include size(100%);
+			opacity: .2;
+			transition: opacity .2s;
+			
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		
+		&:hover{
+			
+			.photo{
+				opacity: .4;
+			}
+		}
+	}
+	
+	.prev,
+	.next{
+		position: absolute;
+		bottom: 13px;
+		color: #111c1d;
+		font-size: 10px;
+		font-size: 1rem;
+		text-transform: uppercase;
+		
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	
+	.prev{
+		left: 21px;
+		
+		&:before{
+			content: '< ';
+		}
+	}
+	
+	.next{
+		right: 21px;
+		
+		&:after{
+			content: ' >';
+		}
+	}
+}
+
+.newsFacebook{
+	display: table-cell;
+	backgorund: $white;
+	padding: 47px 17px 40px;
+	
+	h2{
+		color: #111c1d;
+		font-size: 37px;
+		font-size: 3.7rem;
+		font-weight: 300;
+		margin-bottom: 20px;
+	}
+	
+	.post{
+		border: 2px solid #ececec;
+		border-radius: 2px;
+		position: relative;
+		margin-bottom: 6px;
+		@include clear();
+		
+		.text{
+			float: left;
+			width: 313px;
+			padding: 7px 0 7px 7px;
+			font-size: 11px;
+			font-size: 1.1rem;
+			color: #828281;
+			line-height: 1.272;
+		}
+		
+		.photo{
+			float: right;
+			width: 99px;
+			@include rel(1px, -1px);
+			margin-bottom: -2px;
+			
+			img{
+				display: block;
+				max-width: 100%;
+				margin: 0 0 0 auto;
+			}
+		}
+	}
+	
+	.fb{
+		margin-top: 18px;
+		font-size: 10px;
+		font-size: 1rem;
+		color: #111c1d;
+		text-transform: uppercase;
+		float: right;
+		
+		&:after{
+			content: ' >';
+		}
+		
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

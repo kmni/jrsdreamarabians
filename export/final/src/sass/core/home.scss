@@ -1,0 +1,76 @@
+.homePage{
+	
+}
+
+.homeHorse{
+	position: relative;
+	
+	.photo{
+		
+		img{
+			display: block;
+		}
+	}
+	
+	.tag{
+		@include absR(-12px, 93px);
+		min-width: 348px;
+		height: 67px;
+		padding: 8px 25px 0 35px;
+		background: #2e4040;
+		color: #d3d3d3;
+		font-weight: 300;
+		white-space: nowrap;
+		text-transform: uppercase;
+		
+		&:before{
+			content: '';
+			border-color: #2e4040 transparent transparent #2e4040;
+			border-width: 3px 6px;
+			border-style: solid;
+			width: 0;
+			height: 0;
+			@include absRB(0, -6px);
+		}
+		
+		.name{
+			font-size: 24px;
+			font-size: 2.4rem;
+			margin-left: 2px;
+		}
+		
+		.parents{
+			font-size: 14px;
+			font-size: 1.4rem;
+		}
+	}
+}
+
+.homeLogo{
+	height: 153px;
+	background: fade_out(#d3d3d3, .85);
+	position: relative;
+	
+	&:before{
+		content: '';
+		background: url('../img/logo-big.png') 0 0 no-repeat;
+		width: 714px;
+		height: 196px;
+		@include abs(50%, -30px);
+		margin-left: -357px;
+	}
+	
+	span{
+		@include hidden();
+	}
+}
+
+.homeText{
+	color: #f9fdff;
+	background: fade_out(#d3d3d3, .92);
+	padding: 42px 94px 78px;
+	
+	p{
+		font-weight: 400;
+	}
+}

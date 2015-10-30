@@ -1,0 +1,18 @@
+@import 'plugins/reset';
+@import 'plugins/magnific-popup';
+
+//import helpers
+@import 'helpers/helpers';
+
+@import 'core/0.vars';
+
+//import screen declarations
+@import 'core/1.common';
+@import 'core/2.formatted';
+@import 'core/footer';
+@import 'core/header';
+@import 'core/home';
+@import 'core/text';
+@import 'core/list';
+@import 'core/profile';
+@import 'core/news';

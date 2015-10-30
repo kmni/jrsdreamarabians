@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js ie6 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js ie7 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js ie8 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Dream Arabians</title>
+	<meta name="description" content="" />
+	
+	<meta name="robots" content="index,follow" />
+	
+	<script>
+		document.documentElement.className = document.documentElement.className.replace(/(^|\s)no-js(\s|$)/, "$1js$2");
+	</script>
+	
+	<link href="./css/style.css" rel="stylesheet" media="screen" />
+	<link href="./css/print.css" rel="stylesheet" media="print" />
+	
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body class="">
+
+<header class="pageHeader">
+	<div class="inner">
+		<a href="#" class="pageLogo">
+			<img src="img/logo.png" alt="" />
+		</a>
+		<nav class="pageMenu">
+			<ul>
+				<li><a href="#">Mares</a></li>
+				<li><a href="#" class="active">Stallions</a></li>
+				<li><a href="#">Foals</a></li>
+				<li><a href="#">Sale Horses</a></li>
+				<li><a href="#">News</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="pageContent">
+	<div class="inner">
+		<main>
+	<div class="pageNews">
+		<div class="newsNews">
+			<h1>Recent news</h1>
+			<div class="list">
+				<a href="#" class="item">
+					<h2 class="name"><span>Congratulation on your<br /> new purchase</span></h2>
+					<div class="photo">
+						<img src="img/news1.jpg" alt="" />
+					</div>
+				</a>
+				<a href="#" class="item">
+					<h2 class="name"><span>View photos from<br /> our open house</span></h2>
+					<div class="photo">
+						<img src="img/news2.jpg" alt="" />
+					</div>
+				</a>
+				<a href="#" class="item">
+					<h2 class="name"><span>Watch our new farm<br /> video from horsefilms</span></h2>
+					<div class="photo">
+						<img src="img/news3.jpg" alt="" />
+					</div>
+				</a>
+				<a href="#" class="item">
+					<h2 class="name"><span>Welcome to our new<br /> website by arabhorse</span></h2>
+					<div class="photo">
+						<img src="img/news4.jpg" alt="" />
+					</div>
+				</a>
+			</div>
+			<a href="#" class="prev">Previous</a>
+			<a href="#" class="next">Next</a>
+		</div>
+		<div class="newsFacebook">
+			<h2>Find us on Facebook</h2>
+			<div class="posts" id="facebook"></div>
+			<a href="#" class="fb">View on Facebook</a>
+			<script id="facebook_template" type="text/x-jquery-tmpl">
+				<div class="post">
+					<div class="text">
+						{{html message}}
+					</div>
+					{{if picture}}
+					<div class="photo">
+						<img src="${Social.facebookPictureURL(picture)}" alt="" />
+					</div>
+					{{/if}}
+				</div>
+			</script>
+		</div>
+	</div>
+</main>
+	</div>
+</div>
+
+<footer class="pageFooter">
+	<div class="inner">
+		<ul class="menu">
+			<li><a href="#">Mares</a></li>
+			<li><a href="#" class="active">Stallions</a></li>
+			<li><a href="#">Foals</a></li>
+			<li><a href="#">Sale Horses</a></li>
+			<li><a href="#">News</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</footer>
+
+<script src="./js/script.js"></script>
+
+
+</body>
+</html>
